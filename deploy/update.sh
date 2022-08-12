@@ -2,7 +2,7 @@
 
 echo "Starting Update"
 
-# Config to show error
+# Config to show errors
 set -e
 
 # Project file configurations

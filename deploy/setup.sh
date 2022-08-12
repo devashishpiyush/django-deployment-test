@@ -10,9 +10,9 @@ PROJECT_NAME='django_api'
 PROJECT_GIT_URL='https://github.com/devashishpiyush/django-deployment-test.git'
 
 # Project Base Path
-PROJECT_BASE_PATH = '/usr/local/workspace/apps'
+PROJECT_BASE_PATH='/usr/local/workspace/apps'
 # Virtual Environment Base Path
-VIRTUALENV_BASE_PATH = 'usr/local/workspace/env'
+VIRTUALENV_BASE_PATH='usr/local/workspace/env'
 
 # Check and install updates.
 apt-get update

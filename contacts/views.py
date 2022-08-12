@@ -15,9 +15,10 @@ from contacts import (
 # Create your views here.
 class ContactViewSet(ModelViewSet):
     """Handles creating, reading and updating contacts."""
-    authentication_classes = (TokenAuthentication,)
+
     serializer_class = serializers.ContactSerializer
     queryset = models.Contact.objects.all()
+    authentication_classes = (TokenAuthentication,)
     permission_classes = (permissions.UpdateOwnContact, IsAuthenticated)
 
     def perform_create(self, serializer):

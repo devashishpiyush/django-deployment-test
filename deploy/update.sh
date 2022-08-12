@@ -6,9 +6,9 @@ echo "Starting Update"
 set -e
 
 # Project file configurations
-$PROJECT_NAME='django_api'
-$PROJECT_BASE_PATH = '/usr/local/workspace/apps'
-$VIRTUALENV_BASE_PATH = '/usr/local/workspace/env'
+PROJECT_NAME='django_api'
+PROJECT_BASE_PATH='/usr/local/workspace/apps'
+VIRTUALENV_BASE_PATH='/usr/local/workspace/env'
 
 # Change to project dir
 cd $PROJECT_BASE_PATH/$PROJECT_NAME

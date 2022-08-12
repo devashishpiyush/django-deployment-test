@@ -19,7 +19,7 @@ class ContactViewSet(ModelViewSet):
     serializer_class = serializers.ContactSerializer
     queryset = models.Contact.objects.all()
     authentication_classes = (TokenAuthentication,)
-    permission_classes = (permissions.UpdateOwnContact, IsAuthenticated)
+    permission_classes = (permissions.UpdateOwnContact,)
 
     def perform_create(self, serializer):
         """Sets the user profile to the logged in user."""
